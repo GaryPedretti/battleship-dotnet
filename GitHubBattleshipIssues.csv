@@ -1,0 +1,97 @@
+title,body,assignee,state,milestone,labels
+Make the game more readable,"As a player, I want a clean user interface to help me find my way around.
+
+Acceptance Criteria
+1.	Hits and water should be shown in individual colors
+2.	A different color for messages
+3.	Individual game steps should be grouped visually
+4.	The player should be told exactly what the next possible steps are",,open,,
+Indication when a ship has been sunk,"As a player, I want to see which ships of my opponent I have sunk in order to identify which ships I still have to search for.
+
+Acceptance Criteria
+1.	Show only ships that have been sunk completely, not which ship was hit
+2.	Show me in a way that I can see which ships are left over",,open,,
+Game does not end,"Steps to Reproduce
+1.	Start a new game
+2.	Hit all the computers ships 
+3.	The game does not end
+
+Acceptance Criteria
+1.	When all ships have been sunk, the player sees a message saying, ""You are the winner!"" or ""You lost!""
+2.	The game shall end as soon as a player has no more ships left that are not sunk.",,open,,
+Validate ship placement,"As a player, I want to make sure that I'm placing all ships according to the rules so that it's a fair game and I can't cheat.
+
+Acceptance Criteria
+1.	Ships must not overlap each other
+2.	All ships have the correct size
+3.	All ships have all positions in a horizontal or vertical row, gaps are not allowed.
+4.	If the player tries to set an invalid position, a message appears",,open,,
+You can shoot at positions outside the playing field,"Steps to Reproduce
+1.	Shoot at position A20
+2.	A ""Miss"" is displayed, but a message should appear that this position is outside the playing field and the player can repeat his shot.
+
+Acceptance Criteria
+
+??",,open,,
+Computer shall place its ships randomly,"As a player, I want the computer to place its ships randomly so that I don't know their position after a few games and  the game becomes more interesting.
+
+Acceptance Criteria
+1.	The ships must be placed differently for each game
+2.	The placement must comply with the rules
+	- Ships must not cross each other
+	- No ships outside the field
+	- All ships have the correct size
+	- All ships have all positions in a horizontal or vertical row, gaps are not allowed 
+3.	The player cannot see the positions of the ships of the computer",,open,,
+Computers should shoot smarter,"As a player, I want the computer to shoot smarter so that the game becomes more challenging for me.
+
+Acceptance Criteria
+1.	Do not shoot at the same position several times
+2.	Searching for a hit in adjacent positions instead of shooting at a completely different location
+3.	Search for good shot positions based on remaining ships",,open,,
+Make size of the field configurable,"As a player, I want to be able to configure the size of the playing field in order to be able to influence the duration of the game.
+
+Acceptance Criteria
+1.	Non-square fields should be allowed
+2.	Limit board size to 26 in both directions, otherwise the letters are not sufficient
+3.	If board is too small to place all ships, a message should be displayed
+4.	The computer should also use the new board size for placement and shooting
+5.	I should be able to shoot at all configured fields",,open,,
+Make ship positions changeable during placement,"As a player, I want to be able to adjust the positions of my ships during the placement so that I can re-arrange them.
+
+Acceptance Criteria
+1.	The changed positions must also be valid.
+2.	Changes should only be possible if the game has not yet been started.
+3.	The position editing process should be intuitive for the player.",,open,,
+Two human players,"As a player, I want to be able to play against other players to have fun together
+
+Acceptance Criteria
+1.	Each player should be able to play on his computer
+2.	Playing against the computer should still be possible
+3.	There are always two players
+4.	If there are several players on my network, I want to be able to choose who I want to play against",,open,,
+Computer should not shoot at the same position multiple times,"As a player, I don't want the computer to shoot at the same position several times so that its chances of winning increase and the game becomes more challenging to me.
+
+Acceptance Criteria
+1.	The computer should not shoot again at a position it has used before
+2.	The computer shall fire on all fields of the playing field",,open,,
+Computer is supposed to search for adjacent positions after a hit,"As a player, I want the computer to try to sink my ship after a hit to increase its chances of winning and make the game more challenging for me.
+
+Acceptance Criteria
+1.	After a hit, the fields at the top / bottom / left / right of the hit should be fired upon
+2.	Immediately after another hit has been made on one of the adjacent fields, the orientation of the ship 
+can be detected and this information should be used for the next shot
+3.	If no more hits are scored in the ship's direction and the ship is not yet sunk, then continue shooting 
+in the other direction from the first hit.
+4.	After the ship has been sunk, the next shot position is to be searched randomly on the whole field again
+5.	If two ships touch each other, the system must detect this and sink both ships.",,open,,
+Computer shall search for good shooting positions based on the remaining ships,"As a player, I want the computer to look for the best possible shot positions to increase its chances of winning and make the game more challenging for me.
+
+Acceptance Criteria
+1.	Do not shoot in gaps where there is not enough space for the smallest vessel to be sunk.
+2.	Consider gaps in horizontal and vertical direction",,open,,
+Cool Happy Ending,"As a player, I want a cool message or something like that when I win the game, so I'm motivated to play the game again.
+
+Acceptance Criteria
+1.	The message should be a positive surprise
+2.	The message should work on a standard computer and require no special equipment.",,open,,
